@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  text-decoration: none !important;
+}
+
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+}
+
+h1,
+ a {
+    font-family: "raleway", sans-serif;
+}
+
+p {
+    font-family: "open sans" sans-serif;
+}
+
+a,
+p,
+h1 {
+    color: var(--VeryDarkBlue);
+}
+
+
+a:hover {
+    color: var(--BrightBlue);
+    transition: 0.3s ease-in-out;
+}
+
+.hero-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--BrightBlue);
+}
+
+
+
+.bg-image {
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 4rem;
+}
+
+.link {
+    border-bottom: 1px solid var(--ModerateCyan);
+    width: 170px;
+}
+
+.link a {
+    color: var(--ModerateCyan);
+}
+
+.bg-blue {
+    background-color: var(--DesaturatedBlue);
+}
+
+
+
+@media (min-width: 768px) {
+    .img-adjust {
+        width: 300px
+    }
+
+ .hero-form button, 
+.hero-form2 button{
+    width: 250px !important;
+}
+
+
+
+.bg-image {
+    background-image: url(./images/bg-curve-mobile.svg);
+}
+
+.card {
+    width: 70%;
+}
+}
+
+@media (min-width: 992px) {
+    .img-adjust {
+        width: 500px;
+    }
+    .card {
+        width: 60%;
+    }
+}
